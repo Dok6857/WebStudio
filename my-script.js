@@ -19,3 +19,9 @@ const serviceElement = document.getElementById('service');
 openButton.addEventListener('click', function () {
   serviceElement.classList.add('is-open');
 });
+
+const closeButton = document.getElementById('closeButton');
+
+closeButton.addEventListener('click', function () {
+  serviceElement.classList.remove('is-open');
+});
