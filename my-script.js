@@ -25,3 +25,16 @@ const closeButton = document.getElementById('closeButton');
 closeButton.addEventListener('click', function () {
   serviceElement.classList.remove('is-open');
 });
+
+const mobileBurger = document.getElementById('mobileBurger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+mobileBurger.addEventListener('click', function () {
+  mobileMenu.classList.add('is-open');
+});
+
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+mobileMenuClose.addEventListener('click', function () {
+  mobileMenu.classList.remove('is-open');
+});
