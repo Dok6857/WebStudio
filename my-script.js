@@ -1,40 +1,27 @@
 'use strict';
 
-function sum(first, second) {
-  return first + second;
-}
+const openButton = document.querySelector('.hero-button');
+const backdropElement = document.querySelector('.backdrop');
 
-function getNumber(x, y) {
-  //   const x = 5;
-  //   const y = 10;
-
-  const result = x * y;
-
-  return result;
-}
-
-const openButton = document.getElementById('openButton');
-const serviceElement = document.getElementById('service');
-
-openButton.addEventListener('click', function () {
-  serviceElement.classList.add('is-open');
+openButton.addEventListener('click', () => {
+  backdropElement.classList.add('is-open');
 });
 
-const closeButton = document.getElementById('closeButton');
+const closeButton = document.querySelector('.close-btn');
 
-closeButton.addEventListener('click', function () {
-  serviceElement.classList.remove('is-open');
+closeButton.addEventListener('click', () => {
+  backdropElement.classList.remove('is-open');
 });
 
 const mobileBurger = document.getElementById('mobileBurger');
 const mobileMenu = document.getElementById('mobileMenu');
 
-mobileBurger.addEventListener('click', function () {
+mobileBurger.addEventListener('click', () => {
   mobileMenu.classList.add('is-open');
 });
 
 const mobileMenuClose = document.getElementById('mobileMenuClose');
 
-mobileMenuClose.addEventListener('click', function () {
+mobileMenuClose.addEventListener('click', () => {
   mobileMenu.classList.remove('is-open');
 });
